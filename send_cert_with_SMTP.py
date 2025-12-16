@@ -15,8 +15,8 @@ SMTP_PORT = 587
 SENDER_EMAIL = "EMAIL ADDRESS" #Change it with your email
 APP_PASSWORD = "YOUR EMAIL PASSWD" #Change it with your email passwd
 
-CSV_PATH = "sensorverse_mail_data.csv"
-TEMPLATE_PATH = "template.txt"
+CSV_PATH = "mail_req_data/sensorverse_mail_data.csv" #Update with req csv file
+TEMPLATE_PATH = "mail_template.txt"
 FAILED_CSV = "failed_mails.csv"
 
 # Load students data
@@ -51,7 +51,7 @@ with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
             msg = EmailMessage()
             msg["From"] = SENDER_EMAIL
             msg["To"] = recipient
-            msg["Subject"] = "Sample Mail" # Subject
+            msg["Subject"] = "Participation Certificate - SensorVerse" # Subject
 
             # Personalize message
             body = email_template.replace("{name}", name)
@@ -71,7 +71,7 @@ with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
 
             server.send_message(msg)
             print(f"Sent certificate to {recipient}")
-            break #Comment to send to all participants
+            # break #Uncomment to send to only one participant
         
         except Exception as e:
             failed_records.append({
