@@ -1,3 +1,5 @@
 sensorverse_certificates/**
 linebot_certificates/**
 event_data/**
+/failed_mails.csv
+/mail_req_csv/sensorverse_mail_data copy.csv
