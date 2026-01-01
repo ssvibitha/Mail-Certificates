@@ -1,5 +1,5 @@
 # Smart Mail Automation System
-A tool that automatically sends personalized emails with attachment to every event participant, removing the need for manual mailing.
+A tool that automatically sends personalized emails with attachment to every event participant, removing the need for manual mailing using **Outlook**.
 
 ## Description
 This project automates the distribution of personalized emails with attachments—such as participation certificates—to event attendees.
@@ -83,7 +83,7 @@ pip install pandas
 
   + `EVENT_NAME = "My event name"`
     
-* To run `send_cert_without_SMTP` file, make sure you have Outlook Desktop installed on your system and login with the mail credentials you want to send mails from
+* To run `send_cert_without_SMTP` file, make sure you have **Outlook Desktop** installed on your system and login with the mail credentials you want to send mails from
 
 
 ### Executing program
