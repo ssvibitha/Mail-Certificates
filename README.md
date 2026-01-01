@@ -83,7 +83,7 @@ pip install pandas
 
   + `EVENT_NAME = "My event name"`
     
-* In `send_cert_without_SMTP` file, make sure you have Outlook Desktop installed on your system and login with the mail credentials you want to send mails from
+* To run `send_cert_without_SMTP` file, make sure you have Outlook Desktop installed on your system and login with the mail credentials you want to send mails from
 
 
 ### Executing program
