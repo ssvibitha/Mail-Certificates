@@ -1,14 +1,12 @@
 import pandas as pd
+import re
 
 # Read original CSV (DO NOT modify it)
 df = pd.read_csv("event_data/linebot_data.csv") 
 
 # Create CertificateFile column safely
 df["CertificateFile"] = (
-    df["Name2"]
-    .str.strip()
-    .str.replace(r"[^\w\s]", "", regex=True)  # remove special characters
-    .str.replace(" ", "_", regex=False)       # replace spaces
+    re.sub(r'[^a-zA-Z0-9]+', '_', df["Name2"]).strip()     
     + ".pdf"
 )
 

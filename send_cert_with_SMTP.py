@@ -14,14 +14,14 @@ import sys
 SMTP_SERVER = "smtp.office365.com"
 SMTP_PORT = 587
 
-SENDER_EMAIL = "robotics@snuchennai.edu.in" #Change it with your email
+SENDER_EMAIL = "INSERT EMAIL" #Change it with your email
 APP_PASSWORD = "INSERT PASSWD" #Change it with your email passwd
 
 CSV_PATH = "mail_req_csv/linebot_mail_data.csv" #Update with req csv file
 TEMPLATE_PATH = "mail_template.txt"
 FAILED_CSV = "failed_mails.csv"
 
-CERT_FOLDER = Path(BASE_DIR) / "linebot_certificates"
+CERT_FOLDER = Path(BASE_DIR) / "linebot_certificates" # Update with your cert folder path
 SUBJECT = "Participation Certificate - Line Following Bot Workshop" # Subject
 EVENT_NAME = "Line Following Bot Workshop"
 # Pre-flight Checks
